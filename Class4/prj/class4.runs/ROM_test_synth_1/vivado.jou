@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Aug 20 11:29:12 2026
+# Process ID: 27040
+# Current directory: G:/FPGA_COURSE/Class4/prj/class4.runs/ROM_test_synth_1
+# Command line: vivado.exe -log ROM_test.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ROM_test.tcl
+# Log file: G:/FPGA_COURSE/Class4/prj/class4.runs/ROM_test_synth_1/ROM_test.vds
+# Journal file: G:/FPGA_COURSE/Class4/prj/class4.runs/ROM_test_synth_1\vivado.jou
+#-----------------------------------------------------------
+source ROM_test.tcl -notrace

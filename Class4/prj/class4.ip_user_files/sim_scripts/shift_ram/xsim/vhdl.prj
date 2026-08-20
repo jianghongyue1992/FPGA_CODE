@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../class4.gen/sources_1/ip/shift_ram/sim/shift_ram.vhd" \
+
+nosort

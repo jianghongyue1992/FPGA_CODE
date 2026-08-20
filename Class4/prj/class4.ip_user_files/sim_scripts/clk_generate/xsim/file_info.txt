@@ -1,0 +1,3 @@
+clk_generate_clk_wiz.v,verilog,xil_defaultlib,../../../../class4.gen/sources_1/ip/clk_generate/clk_generate_clk_wiz.v,incdir="$ref_dir/../../../ipstatic"incdir="../../../ipstatic"
+clk_generate.v,verilog,xil_defaultlib,../../../../class4.gen/sources_1/ip/clk_generate/clk_generate.v,incdir="$ref_dir/../../../ipstatic"incdir="../../../ipstatic"
+glbl.v,Verilog,xil_defaultlib,glbl.v

@@ -1,0 +1,36 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../class4.gen/sources_1/ip/clk_generate" \
+"../../../../class4.gen/sources_1/ip/ROM_test/sim/ROM_test.v" \
+"../../../../class4.gen/sources_1/ip/set_ram/sim/set_ram.v" \
+"../../../../class4.gen/sources_1/ip/dual_ram/sim/dual_ram.v" \
+"../../../../class4.gen/sources_1/ip/ram_test/sim/ram_test.v" \
+"../../../../class4.gen/sources_1/ip/fifo_3/sim/fifo_3.v" \
+"../../../../class4.gen/sources_1/ip/fifo_2/sim/fifo_2.v" \
+"../../../../class4.gen/sources_1/ip/fifo_1/sim/fifo_1.v" \
+"../../../../class4.gen/sources_1/ip/clk_generate/clk_generate_clk_wiz.v" \
+"../../../../class4.gen/sources_1/ip/clk_generate/clk_generate.v" \
+"../../../../../rtl/dual_ram.v" \
+"../../../../../rtl/led_1s.v" \
+"../../../../../rtl/system_config.v" \
+"../../../../../rtl/top.v" \
+
+sv xil_defaultlib  --include "../../../../class4.gen/sources_1/ip/clk_generate" \
+"../../../../../rtl/ROM.sv" \
+"../../../../../rtl/UART_TOP.sv" \
+"../../../../../rtl/dual_ram_1.sv" \
+"../../../../../rtl/fifo_pingpang.sv" \
+"../../../../../rtl/fifo_wr.sv" \
+"../../../../../rtl/lfsr_multi.sv" \
+"../../../../../rtl/op_enable.sv" \
+"../../../../../rtl/ram_wr.sv" \
+"../../../../../rtl/shift_ram.sv" \
+"../../../../../rtl/uart_rx.sv" \
+"../../../../../rtl/uart_tx.sv" \
+"../../../../../rtl/width_trans.sv" \
+"../../../../../sim/SIM_TOP.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

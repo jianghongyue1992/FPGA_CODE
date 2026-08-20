@@ -1,0 +1,89 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: F:/FPGA/vivado2020/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto a07938adfcc24bb896ffc3bea09747de --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_4 -L xbip_utils_v3_0_10 -L c_reg_fd_v12_0_6 -L c_mux_bit_v12_0_6 -L c_shift_ram_v12_0_14 -L fifo_generator_v13_2_5 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot SIM_TOP_behav xil_defaultlib.SIM_TOP xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-8389] size mismatch in mixed language port association, VHDL port 'a' [G:/FPGA_COURSE/Class4/rtl/shift_ram.sv:40]
+WARNING: [VRFC 10-8389] size mismatch in mixed language port association, VHDL port 'a' [G:/FPGA_COURSE/Class4/rtl/shift_ram.sv:47]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'ena' [G:/FPGA_COURSE/Class4/rtl/ram_wr.sv:69]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'web' [G:/FPGA_COURSE/Class4/rtl/dual_ram.v:148]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 12 for port 'addra' [G:/FPGA_COURSE/Class4/rtl/dual_ram_1.sv:203]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 10 for port 'addrb' [G:/FPGA_COURSE/Class4/rtl/dual_ram_1.sv:208]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 128 for port 'doutb' [G:/FPGA_COURSE/Class4/rtl/dual_ram_1.sv:210]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'uart_rx_data' [G:/FPGA_COURSE/Class4/rtl/top.v:171]
+WARNING: [VRFC 10-3823] variable 'dout_vld' might have multiple concurrent drivers [G:/FPGA_COURSE/Class4/rtl/fifo_wr.sv:79]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package c_shift_ram_v12_0_14.c_shift_ram_v12_0_14_viv_comp
+Compiling package c_shift_ram_v12_0_14.c_shift_ram_v12_0_14_pkg
+Compiling package c_mux_bit_v12_0_6.c_mux_bit_v12_0_6_viv_comp
+Compiling package c_reg_fd_v12_0_6.c_reg_fd_v12_0_6_viv_comp
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=20.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_generate_clk_wiz
+Compiling module xil_defaultlib.clk_generate
+Compiling module xil_defaultlib.system_config
+Compiling module xil_defaultlib.led_1s(CNT_MAX=500000000)
+Compiling module xil_defaultlib.op_enable
+Compiling module xil_defaultlib.lfsr_multi(MODE=0)
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_s...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_p...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_CONV_VER(...
+Compiling module fifo_generator_v13_2_5.fifo_generator_vlog_beh(C_COMMON...
+Compiling module xil_defaultlib.fifo_1
+Compiling module xil_defaultlib.fifo_wr
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_s...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_p...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_CONV_VER(...
+Compiling module fifo_generator_v13_2_5.fifo_generator_vlog_beh(C_COMMON...
+Compiling module xil_defaultlib.fifo_2
+Compiling module xil_defaultlib.fifo_3
+Compiling module xil_defaultlib.fifo_pingpang
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.ram_test
+Compiling module xil_defaultlib.ram_wr
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.dual_ram
+Compiling module xil_defaultlib.dual_ram_0
+Compiling module xil_defaultlib.lfsr_multi(MODE=4)
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.set_ram
+Compiling module xil_defaultlib.dual_ram_1(WIDTH_IN=128,WIDTH_OU...
+Compiling module xil_defaultlib.width_trans
+Compiling architecture structural of entity c_reg_fd_v12_0_6.c_reg_fd_v12_0_6_viv [\c_reg_fd_v12_0_6_viv(c_width=8,...]
+Compiling architecture struct of entity c_shift_ram_v12_0_14.c_shift_ram_v12_0_14_legacy [\c_shift_ram_v12_0_14_legacy(c_x...]
+Compiling architecture synth of entity c_shift_ram_v12_0_14.c_shift_ram_v12_0_14_viv [\c_shift_ram_v12_0_14_viv(c_xdev...]
+Compiling architecture xilinx of entity c_shift_ram_v12_0_14.c_shift_ram_v12_0_14 [\c_shift_ram_v12_0_14(c_xdevicef...]
+Compiling architecture shift_ram_arch of entity xil_defaultlib.shift_ram [shift_ram_default]
+Compiling module xil_defaultlib.shift_ram_test
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.ROM_test
+Compiling module xil_defaultlib.ROM
+Compiling module xil_defaultlib.uart_rx(CLK_FREQ=100000000)
+Compiling module xil_defaultlib.uart_tx(CLK_FREQ=100000000)
+Compiling module xil_defaultlib.UART_TOP(CLK_FREQ=100000000)
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.SIM_TOP
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot SIM_TOP_behav

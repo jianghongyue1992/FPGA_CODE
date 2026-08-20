@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Aug 18 16:29:40 2026
+# Process ID: 24268
+# Current directory: G:/FPGA_COURSE/Class4/prj/class4.runs/fifo_1_synth_1
+# Command line: vivado.exe -log fifo_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fifo_1.tcl
+# Log file: G:/FPGA_COURSE/Class4/prj/class4.runs/fifo_1_synth_1/fifo_1.vds
+# Journal file: G:/FPGA_COURSE/Class4/prj/class4.runs/fifo_1_synth_1\vivado.jou
+#-----------------------------------------------------------
+source fifo_1.tcl -notrace
