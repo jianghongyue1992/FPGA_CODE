@@ -1,0 +1,12 @@
+
+{ 
+    crc :  5668298490891354014  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto 6da8a4eec12447dcbdedd0fb238f80a1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_4 -L fifo_generator_v13_2_5 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim_tb_behav xil_defaultlib.sim_tb xil_defaultlib.glbl" , 
+    buildDate : "Nov 18 2020" , 
+    buildTime : "09:47:47" , 
+    linkCmd : "F:\\FPGA\\vivado2020\\Vivado\\2020.2\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/sim_tb_behav/xsimk.exe\"   \"xsim.dir/sim_tb_behav/obj/xsim_0.win64.obj\" \"xsim.dir/sim_tb_behav/obj/xsim_1.win64.obj\" -L\"F:\\FPGA\\vivado2020\\Vivado\\2020.2\\lib\\win64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

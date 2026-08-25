@@ -1,0 +1,22 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+E:/FPGA_CLASS/Class4/prj/class4.gen/sources_1/ip/AXI_FULL/sim/AXI_FULL.v,1787552902,verilog,,,,AXI_FULL,,uvm,,,,,,
+E:/FPGA_CLASS/Class4/prj/class4.gen/sources_1/ip/AXI_LITE/sim/AXI_LITE.v,1787281138,verilog,,E:/FPGA_CLASS/Class4/prj/class4.gen/sources_1/ip/fifo_rdaddr/sim/fifo_rdaddr.v,,AXI_LITE,,uvm,,,,,,
+E:/FPGA_CLASS/Class4/prj/class4.gen/sources_1/ip/fifo_awaddr/sim/fifo_awaddr.v,1787303970,verilog,,E:/FPGA_CLASS/Class4/prj/class4.gen/sources_1/ip/fifo_wrdata/sim/fifo_wrdata.v,,fifo_awaddr,,uvm,,,,,,
+E:/FPGA_CLASS/Class4/prj/class4.gen/sources_1/ip/fifo_rdaddr/sim/fifo_rdaddr.v,1787551151,verilog,,E:/FPGA_CLASS/Class4/prj/class4.gen/sources_1/ip/fifo_rddata/sim/fifo_rddata.v,,fifo_rdaddr,,uvm,,,,,,
+E:/FPGA_CLASS/Class4/prj/class4.gen/sources_1/ip/fifo_rddata/sim/fifo_rddata.v,1787540779,verilog,,E:/FPGA_CLASS/Class4/prj/class4.gen/sources_1/ip/fifo_awaddr/sim/fifo_awaddr.v,,fifo_rddata,,uvm,,,,,,
+E:/FPGA_CLASS/Class4/prj/class4.gen/sources_1/ip/fifo_wrdata/sim/fifo_wrdata.v,1787303952,verilog,,,,fifo_wrdata,,uvm,,,,,,
+E:/FPGA_CLASS/Class4/prj/class4.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,uvm,,,,,,
+E:/FPGA_CLASS/Class4/rtl/AXI_FULL_RD.sv,1787558864,systemVerilog,,E:/FPGA_CLASS/Class4/rtl/AXI_FULL_WR.sv,,AXI_FULL_RD,,uvm,,,,,,
+E:/FPGA_CLASS/Class4/rtl/AXI_FULL_WR.sv,1787560577,systemVerilog,,E:/FPGA_CLASS/Class4/rtl/axi_full.sv,,AXI_FULL_WR,,uvm,,,,,,
+E:/FPGA_CLASS/Class4/rtl/axi_full.sv,1787559234,systemVerilog,,E:/FPGA_CLASS/Class4/rtl/axi_slave_ram.sv,,axi_full,,uvm,,,,,,
+E:/FPGA_CLASS/Class4/rtl/axi_slave_ram.sv,1787559019,systemVerilog,,,,axi_slave_ram,,uvm,,,,,,
+E:/FPGA_CLASS/Class4/rtl/axilite_rd.sv,1787554942,systemVerilog,,E:/FPGA_CLASS/Class4/rtl/axilite_top.sv,,axilite_rd,,uvm,,,,,,
+E:/FPGA_CLASS/Class4/rtl/axilite_top.sv,1787552658,systemVerilog,,E:/FPGA_CLASS/Class4/rtl/axilite_wr.sv,,axilite_top,,uvm,,,,,,
+E:/FPGA_CLASS/Class4/rtl/axilite_wr.sv,1787537339,systemVerilog,,E:/FPGA_CLASS/Class4/rtl/lfsr_multi.sv,,axilite_wr,,uvm,,,,,,
+E:/FPGA_CLASS/Class4/rtl/lfsr_multi.sv,1787032278,systemVerilog,,E:/FPGA_CLASS/Class4/rtl/op_enable.sv,,lfsr_multi,,uvm,,,,,,
+E:/FPGA_CLASS/Class4/rtl/op_enable.sv,1787031569,systemVerilog,,E:/FPGA_CLASS/Class4/sim/sim_tb.sv,,op_enable,,uvm,,,,,,
+E:/FPGA_CLASS/Class4/sim/sim_tb.sv,1787554189,systemVerilog,,,,sim_tb,,uvm,,,,,,
+E:/FPGA_CLASS/Class4/sim/tb_axi_full.v,1787560651,verilog,,,,tb_axi_full,,uvm,,,,,,

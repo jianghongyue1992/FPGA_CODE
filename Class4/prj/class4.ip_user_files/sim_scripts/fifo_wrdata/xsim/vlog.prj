@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../class4.gen/sources_1/ip/fifo_wrdata/sim/fifo_wrdata.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

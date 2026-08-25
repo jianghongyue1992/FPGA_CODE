@@ -1,0 +1,2 @@
+fifo_awaddr.v,verilog,xil_defaultlib,../../../../class4.gen/sources_1/ip/fifo_awaddr/sim/fifo_awaddr.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

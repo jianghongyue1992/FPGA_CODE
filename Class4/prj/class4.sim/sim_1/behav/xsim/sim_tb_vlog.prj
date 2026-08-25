@@ -1,0 +1,21 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../class4.gen/sources_1/ip/AXI_LITE/sim/AXI_LITE.v" \
+"../../../../class4.gen/sources_1/ip/fifo_rdaddr/sim/fifo_rdaddr.v" \
+"../../../../class4.gen/sources_1/ip/fifo_rddata/sim/fifo_rddata.v" \
+"../../../../class4.gen/sources_1/ip/fifo_awaddr/sim/fifo_awaddr.v" \
+"../../../../class4.gen/sources_1/ip/fifo_wrdata/sim/fifo_wrdata.v" \
+
+sv xil_defaultlib  \
+"../../../../../rtl/axilite_rd.sv" \
+"../../../../../rtl/axilite_top.sv" \
+"../../../../../rtl/axilite_wr.sv" \
+"../../../../../rtl/lfsr_multi.sv" \
+"../../../../../rtl/op_enable.sv" \
+"../../../../../sim/sim_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

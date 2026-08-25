@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Aug 21 10:59:03 2026
+# Process ID: 31248
+# Current directory: E:/FPGA_CLASS/Class4/prj/class4.runs/AXI_LITE_synth_1
+# Command line: vivado.exe -log AXI_LITE.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source AXI_LITE.tcl
+# Log file: E:/FPGA_CLASS/Class4/prj/class4.runs/AXI_LITE_synth_1/AXI_LITE.vds
+# Journal file: E:/FPGA_CLASS/Class4/prj/class4.runs/AXI_LITE_synth_1\vivado.jou
+#-----------------------------------------------------------
+source AXI_LITE.tcl -notrace

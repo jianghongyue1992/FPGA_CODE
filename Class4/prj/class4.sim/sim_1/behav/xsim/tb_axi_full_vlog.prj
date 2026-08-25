@@ -1,0 +1,18 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../class4.gen/sources_1/ip/AXI_FULL/sim/AXI_FULL.v" \
+
+sv xil_defaultlib  \
+"../../../../../rtl/AXI_FULL_RD.sv" \
+"../../../../../rtl/AXI_FULL_WR.sv" \
+"../../../../../rtl/axi_full.sv" \
+"../../../../../rtl/axi_slave_ram.sv" \
+
+verilog xil_defaultlib  \
+"../../../../../sim/tb_axi_full.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

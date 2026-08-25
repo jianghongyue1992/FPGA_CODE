@@ -1,0 +1,14 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Block Memory Generator module tb_axi_full.u_top.AXI_FULL_INST.inst.\axi_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+=== Test 1: Single write ===
+Write response received: bresp=0
+=== Test 2: Single read ===
+Read data: aabbccdd (expected AABBCCDD)
+=== Test 3: Long burst write (64 beats) ===
+Block Memory Generator module tb_axi_full.u_top.AXI_FULL_INST.inst.\axi_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+=== Test 1: Single write ===
+Write response received: bresp=0
+=== Test 2: Single read ===
+Read data: aabbccdd (expected AABBCCDD)
+=== Test 3: Long burst write (64 beats) ===
