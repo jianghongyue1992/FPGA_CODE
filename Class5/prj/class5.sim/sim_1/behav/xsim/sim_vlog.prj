@@ -1,0 +1,17 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../class5.gen/sources_1/ip/system_clk" \
+"../../../../class5.gen/sources_1/ip/rom_dout/sim/rom_dout.v" \
+"../../../../class5.gen/sources_1/ip/system_clk/system_clk_clk_wiz.v" \
+"../../../../class5.gen/sources_1/ip/system_clk/system_clk.v" \
+
+sv xil_defaultlib  --include "../../../../class5.gen/sources_1/ip/system_clk" \
+"../../../../../rtl/clk_reset.sv" \
+"../../../../../rtl/decode_uart.sv" \
+"../../../../../sim/uart_frame_gen.sv" \
+"../../../../../sim/sim.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

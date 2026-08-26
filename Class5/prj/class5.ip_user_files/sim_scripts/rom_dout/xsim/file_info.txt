@@ -1,0 +1,2 @@
+rom_dout.v,verilog,xil_defaultlib,../../../../class5.gen/sources_1/ip/rom_dout/sim/rom_dout.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

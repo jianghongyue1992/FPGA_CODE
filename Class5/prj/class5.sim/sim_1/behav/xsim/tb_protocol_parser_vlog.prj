@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../class5.gen/sources_1/ip/system_clk" \
+"../../../../../rtl/protocol_parser.v" \
+"../../../../../rtl/tb_protocol_parser.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,9 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_CLASS/Class5/rtl/clk_reset.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_reset
+INFO: [VRFC 10-2458] undeclared symbol locked, assumed default net type wire [E:/FPGA_CLASS/Class5/rtl/clk_reset.sv:35]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_CLASS/Class5/rtl/decode_uart.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decode_uart
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_CLASS/Class5/sim/uart_frame_gen.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_frame_gen
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_CLASS/Class5/sim/sim.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim
