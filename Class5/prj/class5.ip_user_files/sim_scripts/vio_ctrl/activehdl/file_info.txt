@@ -1,0 +1,5 @@
+xpm_cdc.sv,systemverilog,xpm,F:/FPGA/vivado2020/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv,incdir="../../../../class5.gen/sources_1/ip/vio_ctrl/hdl/verilog"incdir="../../../../class5.gen/sources_1/ip/vio_ctrl/hdl"
+xpm_memory.sv,systemverilog,xpm,F:/FPGA/vivado2020/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv,incdir="../../../../class5.gen/sources_1/ip/vio_ctrl/hdl/verilog"incdir="../../../../class5.gen/sources_1/ip/vio_ctrl/hdl"
+xpm_VCOMP.vhd,vhdl,xpm,F:/FPGA/vivado2020/Vivado/2020.2/data/ip/xpm/xpm_VCOMP.vhd,incdir="../../../../class5.gen/sources_1/ip/vio_ctrl/hdl/verilog"incdir="../../../../class5.gen/sources_1/ip/vio_ctrl/hdl"
+vio_ctrl.v,verilog,xil_defaultlib,../../../../class5.gen/sources_1/ip/vio_ctrl/sim/vio_ctrl.v,incdir="../../../../class5.gen/sources_1/ip/vio_ctrl/hdl/verilog"incdir="../../../../class5.gen/sources_1/ip/vio_ctrl/hdl"
+glbl.v,Verilog,xil_defaultlib,glbl.v

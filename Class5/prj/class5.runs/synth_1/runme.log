@@ -1,0 +1,370 @@
+
+*** Running vivado
+    with args -log system_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_top.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source system_top.tcl -notrace
+Command: synth_design -top system_top -part xc7a35tfgg484-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tfgg484-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 8648
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1129.531 ; gain = 8.027
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'system_top' [E:/FPGA_CLASS/Class5/rtl/system_top.sv:23]
+	Parameter CLK_FREQ bound to: 50000000 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter STOP_WIDTH bound to: 1 - type: integer 
+	Parameter CHACK_TYPE bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'clk_reset' [E:/FPGA_CLASS/Class5/rtl/clk_reset.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'system_clk' [E:/FPGA_CLASS/Class5/prj/class5.runs/synth_1/.Xil/Vivado-13912-USER-20221221ED/realtime/system_clk_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'system_clk' (1#1) [E:/FPGA_CLASS/Class5/prj/class5.runs/synth_1/.Xil/Vivado-13912-USER-20221221ED/realtime/system_clk_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_reset' (2#1) [E:/FPGA_CLASS/Class5/rtl/clk_reset.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'UART_TOP' [E:/FPGA_CLASS/Class5/rtl/UART_TOP.sv:4]
+	Parameter CLK_FREQ bound to: 50000000 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter STOP_WIDTH bound to: 1 - type: integer 
+	Parameter CHACK_TYPE bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [E:/FPGA_CLASS/Class5/rtl/uart_rx.sv:4]
+	Parameter CLK_FREQ bound to: 50000000 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter STOP_WIDTH bound to: 1 - type: integer 
+	Parameter CHACK_TYPE bound to: 0 - type: integer 
+	Parameter BAUD_CNT_MAX bound to: 434 - type: integer 
+	Parameter BAUD_CNT_MAX_HALF bound to: 217 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (3#1) [E:/FPGA_CLASS/Class5/rtl/uart_rx.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [E:/FPGA_CLASS/Class5/rtl/uart_tx.sv:3]
+	Parameter CLK_FREQ bound to: 50000000 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter STOP_WIDTH bound to: 1 - type: integer 
+	Parameter CHACK_TYPE bound to: 0 - type: integer 
+	Parameter BAUD_CNT_MAX bound to: 434 - type: integer 
+	Parameter BAUD_CNT_MAX_HALF bound to: 217 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (4#1) [E:/FPGA_CLASS/Class5/rtl/uart_tx.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'UART_TOP' (5#1) [E:/FPGA_CLASS/Class5/rtl/UART_TOP.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'decode_uart' [E:/FPGA_CLASS/Class5/rtl/decode_uart.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'uart_wram' [E:/FPGA_CLASS/Class5/prj/class5.runs/synth_1/.Xil/Vivado-13912-USER-20221221ED/realtime/uart_wram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'uart_wram' (6#1) [E:/FPGA_CLASS/Class5/prj/class5.runs/synth_1/.Xil/Vivado-13912-USER-20221221ED/realtime/uart_wram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'decode_uart' (7#1) [E:/FPGA_CLASS/Class5/rtl/decode_uart.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'DDS_GEN' [E:/FPGA_CLASS/Class5/prj/class5.runs/synth_1/.Xil/Vivado-13912-USER-20221221ED/realtime/DDS_GEN_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'DDS_GEN' (8#1) [E:/FPGA_CLASS/Class5/prj/class5.runs/synth_1/.Xil/Vivado-13912-USER-20221221ED/realtime/DDS_GEN_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'vio_ctrl' [E:/FPGA_CLASS/Class5/prj/class5.runs/synth_1/.Xil/Vivado-13912-USER-20221221ED/realtime/vio_ctrl_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vio_ctrl' (9#1) [E:/FPGA_CLASS/Class5/prj/class5.runs/synth_1/.Xil/Vivado-13912-USER-20221221ED/realtime/vio_ctrl_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'mux_datain' [E:/FPGA_CLASS/Class5/rtl/mux_datain.sv:23]
+	Parameter WIDTH_IN bound to: 32 - type: integer 
+	Parameter WIDTH_OUT bound to: 8 - type: integer 
+	Parameter DEEP_IN bound to: 1024 - type: integer 
+	Parameter MULTIPLE bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ram_sys' [E:/FPGA_CLASS/Class5/rtl/ram_sys.sv:23]
+	Parameter WIDTH_IN bound to: 32 - type: integer 
+	Parameter WIDTH_OUT bound to: 8 - type: integer 
+	Parameter DEEP_IN bound to: 1024 - type: integer 
+	Parameter MULTIPLE bound to: 4 - type: integer 
+	Parameter IDLE bound to: 4'b0000 
+	Parameter WAIT0 bound to: 4'b0001 
+	Parameter WRITE bound to: 4'b0010 
+	Parameter WAIT1 bound to: 4'b0100 
+	Parameter READ bound to: 4'b1000 
+INFO: [Synth 8-6157] synthesizing module 'set_ram' [E:/FPGA_CLASS/Class5/prj/class5.runs/synth_1/.Xil/Vivado-13912-USER-20221221ED/realtime/set_ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'set_ram' (10#1) [E:/FPGA_CLASS/Class5/prj/class5.runs/synth_1/.Xil/Vivado-13912-USER-20221221ED/realtime/set_ram_stub.v:6]
+WARNING: [Synth 8-689] width (15) of port connection 'addrb' does not match port width (12) of module 'set_ram' [E:/FPGA_CLASS/Class5/rtl/ram_sys.sv:207]
+INFO: [Synth 8-6155] done synthesizing module 'ram_sys' (11#1) [E:/FPGA_CLASS/Class5/rtl/ram_sys.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux_datain' (12#1) [E:/FPGA_CLASS/Class5/rtl/mux_datain.sv:23]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'U4'. This will prevent further optimization [E:/FPGA_CLASS/Class5/rtl/system_top.sv:104]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'U3'. This will prevent further optimization [E:/FPGA_CLASS/Class5/rtl/system_top.sv:96]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'U5'. This will prevent further optimization [E:/FPGA_CLASS/Class5/rtl/system_top.sv:111]
+INFO: [Synth 8-6155] done synthesizing module 'system_top' (13#1) [E:/FPGA_CLASS/Class5/rtl/system_top.sv:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1186.375 ; gain = 64.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1186.375 ; gain = 64.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1186.375 ; gain = 64.871
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1186.375 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/FPGA_CLASS/Class5/prj/class5.gen/sources_1/ip/system_clk/system_clk/system_clk_in_context.xdc] for cell 'U0/system_clk_inst'
+Finished Parsing XDC File [e:/FPGA_CLASS/Class5/prj/class5.gen/sources_1/ip/system_clk/system_clk/system_clk_in_context.xdc] for cell 'U0/system_clk_inst'
+Parsing XDC File [e:/FPGA_CLASS/Class5/prj/class5.gen/sources_1/ip/set_ram/set_ram/set_ram_in_context.xdc] for cell 'U5/U0/set_ram_inst'
+Finished Parsing XDC File [e:/FPGA_CLASS/Class5/prj/class5.gen/sources_1/ip/set_ram/set_ram/set_ram_in_context.xdc] for cell 'U5/U0/set_ram_inst'
+Parsing XDC File [e:/FPGA_CLASS/Class5/prj/class5.gen/sources_1/ip/uart_wram/uart_wram/uart_wram_in_context.xdc] for cell 'U2/uart_wram_inst'
+Finished Parsing XDC File [e:/FPGA_CLASS/Class5/prj/class5.gen/sources_1/ip/uart_wram/uart_wram/uart_wram_in_context.xdc] for cell 'U2/uart_wram_inst'
+Parsing XDC File [e:/FPGA_CLASS/Class5/prj/class5.gen/sources_1/ip/DDS_GEN/DDS_GEN/DDS_GEN_in_context.xdc] for cell 'U3'
+Finished Parsing XDC File [e:/FPGA_CLASS/Class5/prj/class5.gen/sources_1/ip/DDS_GEN/DDS_GEN/DDS_GEN_in_context.xdc] for cell 'U3'
+Parsing XDC File [e:/FPGA_CLASS/Class5/prj/class5.gen/sources_1/ip/vio_ctrl/vio_ctrl/vio_ctrl_in_context.xdc] for cell 'U4'
+Finished Parsing XDC File [e:/FPGA_CLASS/Class5/prj/class5.gen/sources_1/ip/vio_ctrl/vio_ctrl/vio_ctrl_in_context.xdc] for cell 'U4'
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1293.926 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 1293.926 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'U2/uart_wram_inst' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'U5/U0/set_ram_inst' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1305.137 ; gain = 183.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tfgg484-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1305.137 ; gain = 183.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for systemclk. (constraint file  e:/FPGA_CLASS/Class5/prj/class5.gen/sources_1/ip/system_clk/system_clk/system_clk_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for systemclk. (constraint file  e:/FPGA_CLASS/Class5/prj/class5.gen/sources_1/ip/system_clk/system_clk/system_clk_in_context.xdc, line 5).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/system_clk_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U5/U0/set_ram_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U2/uart_wram_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U4. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1305.137 ; gain = 183.633
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'status_c_reg' in module 'ram_sys'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_status_n_reg' [E:/FPGA_CLASS/Class5/rtl/ram_sys.sv:71]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_status_n_reg' [E:/FPGA_CLASS/Class5/rtl/ram_sys.sv:71]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                            00001 |                             0000
+                   WAIT0 |                            10000 |                             0001
+                   WRITE |                            01000 |                             0010
+                   WAIT1 |                            00100 |                             0100
+                    READ |                            00010 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'status_c_reg' using encoding 'one-hot' in module 'ram_sys'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_status_n_reg' [E:/FPGA_CLASS/Class5/rtl/ram_sys.sv:71]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1305.137 ; gain = 183.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   10 Bit       Adders := 2     
+	   2 Input    9 Bit       Adders := 3     
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 3     
+	   2 Input    2 Bit       Adders := 1     
++---Registers : 
+	               96 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               15 Bit    Registers := 1     
+	               10 Bit    Registers := 3     
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 1     
+	   3 Input   32 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 3     
+	   2 Input    8 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 6     
+	   5 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 14    
+	   3 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1305.137 ; gain = 183.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1305.137 ; gain = 183.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1305.137 ; gain = 183.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1305.137 ; gain = 183.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \U2/uart_wram_inst  has unconnected pin dinb[31]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \U2/uart_wram_inst  has unconnected pin dinb[30]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \U2/uart_wram_inst  has unconnected pin dinb[29]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \U2/uart_wram_inst  has unconnected pin dinb[28]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \U2/uart_wram_inst  has unconnected pin dinb[27]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \U2/uart_wram_inst  has unconnected pin dinb[26]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \U2/uart_wram_inst  has unconnected pin dinb[25]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \U2/uart_wram_inst  has unconnected pin dinb[24]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \U2/uart_wram_inst  has unconnected pin dinb[23]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \U2/uart_wram_inst  has unconnected pin dinb[22]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \U2/uart_wram_inst  has unconnected pin dinb[21]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \U2/uart_wram_inst  has unconnected pin dinb[20]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \U2/uart_wram_inst  has unconnected pin dinb[19]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \U2/uart_wram_inst  has unconnected pin dinb[18]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \U2/uart_wram_inst  has unconnected pin dinb[17]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \U2/uart_wram_inst  has unconnected pin dinb[16]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \U2/uart_wram_inst  has unconnected pin dinb[15]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \U2/uart_wram_inst  has unconnected pin dinb[14]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \U2/uart_wram_inst  has unconnected pin dinb[13]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \U2/uart_wram_inst  has unconnected pin dinb[12]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \U2/uart_wram_inst  has unconnected pin dinb[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \U2/uart_wram_inst  has unconnected pin dinb[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \U2/uart_wram_inst  has unconnected pin dinb[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \U2/uart_wram_inst  has unconnected pin dinb[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \U2/uart_wram_inst  has unconnected pin dinb[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \U2/uart_wram_inst  has unconnected pin dinb[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \U2/uart_wram_inst  has unconnected pin dinb[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \U2/uart_wram_inst  has unconnected pin dinb[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \U2/uart_wram_inst  has unconnected pin dinb[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \U2/uart_wram_inst  has unconnected pin dinb[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \U2/uart_wram_inst  has unconnected pin dinb[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \U2/uart_wram_inst  has unconnected pin dinb[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \U0/set_ram_inst  has unconnected pin dinb[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \U0/set_ram_inst  has unconnected pin dinb[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \U0/set_ram_inst  has unconnected pin dinb[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \U0/set_ram_inst  has unconnected pin dinb[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \U0/set_ram_inst  has unconnected pin dinb[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \U0/set_ram_inst  has unconnected pin dinb[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \U0/set_ram_inst  has unconnected pin dinb[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \U0/set_ram_inst  has unconnected pin dinb[0]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1305.137 ; gain = 183.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1305.137 ; gain = 183.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1305.137 ; gain = 183.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1305.137 ; gain = 183.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1305.137 ; gain = 183.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1305.137 ; gain = 183.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |set_ram       |         1|
+|2     |DDS_GEN       |         1|
+|3     |vio_ctrl      |         1|
+|4     |system_clk    |         1|
+|5     |uart_wram     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |DDS_GEN    |     1|
+|2     |set_ram    |     1|
+|3     |system_clk |     1|
+|4     |uart_wram  |     1|
+|5     |vio_ctrl   |     1|
+|6     |OBUF       |     1|
+|7     |OBUFT      |     1|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1305.137 ; gain = 183.633
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 40 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:20 . Memory (MB): peak = 1305.137 ; gain = 64.871
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1305.137 ; gain = 183.633
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1315.102 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1321.602 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+43 Infos, 6 Warnings, 40 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1321.602 ; gain = 200.098
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'E:/FPGA_CLASS/Class5/prj/class5.runs/synth_1/system_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file system_top_utilization_synth.rpt -pb system_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Sep  1 17:21:30 2026...

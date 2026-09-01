@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../class5.gen/sources_1/ip/DDS_GEN/sim/DDS_GEN.vhd" \
+
+nosort

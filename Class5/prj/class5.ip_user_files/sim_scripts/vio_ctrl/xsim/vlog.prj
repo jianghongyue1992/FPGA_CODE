@@ -1,0 +1,6 @@
+verilog xil_defaultlib --include "../../../../class5.gen/sources_1/ip/vio_ctrl/hdl/verilog" --include "../../../../class5.gen/sources_1/ip/vio_ctrl/hdl" \
+"../../../../class5.gen/sources_1/ip/vio_ctrl/sim/vio_ctrl.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

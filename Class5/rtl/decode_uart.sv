@@ -30,9 +30,10 @@ module decode_uart(
     input   logic    [7:0]  uart_rx_data    ,
     input   logic           uart_rx_en      ,
     
-    output  logic    [31:0] decode_addr     ,
-    output  logic    [31:0] decode_data     ,
-    output  logic    [7:0]  ram_cmd                 
+    output  logic    [31:0] ram_dout        ,
+    output  logic           ram_vld         ,
+    output  logic    [7:0]  uart_cmd        ,
+    output  logic           cmd_vld                      
 );
 
 //1.最简单的实现方式_不考虑电路上存在干扰信号，移位寄存器全部存储然后截位
@@ -67,10 +68,50 @@ always@(posedge clk_wr)begin
         fram_vld<=0;
 end
 
+logic [7:0] chack;
 assign ram_cmd =data_left[79:72]; 
 assign decode_addr=data_left[71:40];
 assign decode_data=data_left[39:8];
-logic [7:0] chack;
 assign chack = data_left[7:0];
+assign cmd_vld = fram_vld;
+
+//写计数
+logic [15:0] wr_cnt;
+always@(posedge clk_wr)begin
+    if(reset_wr==1)begin
+        wr_cnt<=0;
+    end
+    else if(cmd_vld)begin
+        wr_cnt<=(wr_cnt==1023)?0:wr_cnt+1'b1;
+    end
+end
+
+logic   [9:0] addrb;
+always@(posedge clk_rd)begin
+    if(reset_rd==1)begin
+        addrb<=0;
+        ram_vld<=0;
+    end
+    else if(ram_cmd==2)begin
+        addrb<=(addrb==1023)?0:addrb+1'b1;
+        ram_vld<=1;
+    end
+end
+
+uart_wram uart_wram_inst (
+  .clka (clk_wr                 ),    // input wire clka
+  .wea  (fram_vld               ),      // input wire [0 : 0] wea
+  .addra(decode_addr            ),  // input wire [9 : 0] addra
+  .dina (decode_data            ),    // input wire [31 : 0] dina
+  .douta(                       ),  // output wire [31 : 0] douta
+  .clkb (clk_rd                 ),    // input wire clkb
+  .web  (1'b0                   ),      // input wire [0 : 0] web
+  .addrb(addrb                  ),  // input wire [9 : 0] addrb
+  .dinb (                       ),    // input wire [31 : 0] dinb
+  .doutb(ram_dout               )  // output wire [31 : 0] doutb
+);
+
+
+
 
 endmodule

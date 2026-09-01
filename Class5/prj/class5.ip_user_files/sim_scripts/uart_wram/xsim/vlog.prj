@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../class5.gen/sources_1/ip/uart_wram/sim/uart_wram.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

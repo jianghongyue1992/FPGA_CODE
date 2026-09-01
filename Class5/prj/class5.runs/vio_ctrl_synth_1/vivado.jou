@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Sep  1 17:04:41 2026
+# Process ID: 16696
+# Current directory: E:/FPGA_CLASS/Class5/prj/class5.runs/vio_ctrl_synth_1
+# Command line: vivado.exe -log vio_ctrl.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vio_ctrl.tcl
+# Log file: E:/FPGA_CLASS/Class5/prj/class5.runs/vio_ctrl_synth_1/vio_ctrl.vds
+# Journal file: E:/FPGA_CLASS/Class5/prj/class5.runs/vio_ctrl_synth_1\vivado.jou
+#-----------------------------------------------------------
+source vio_ctrl.tcl -notrace
